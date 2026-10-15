@@ -102,18 +102,39 @@
 </head>
 <body>
        
-<!-- Felirat a lap felső sarkában, a containeren kívül -->
-
+```html
+<!-- Felirat a lap felső sarkában -->
 <div class="page-header-info">
-    Herbert J. Krisztián<br>💫 PhD Student 💫
+    Herbert J. Krisztián<br>✨ PhD Student ✨
 </div>
 
-<!-- BioDiagnostics kép a cégér alatt -->
-<div style="position: fixed; right: 5px; top: 120px; z-index: 1000;">
-    <img src="BioDiagnostics26.png"
-         alt="BioDiagnostics26"
-         style="width: 313px; height: auto; display: block;">
+<style>
+    .page-header-info {
+        text-align: center;
+    }
+
+    .side-sign-image {
+        position: fixed;
+        right: 0;
+        top: 120px;
+        z-index: 1000;
+    }
+
+    .side-sign-image img {
+        width: 313px;
+        height: auto;
+        display: block;
+    }
+</style>
+
+<!-- BioDiagnostics kép -->
+<div class="side-sign-image">
+    <img src="BioDiagnostics26.png" alt="BioDiagnostics26">
 </div>
+
+<div class="container">
+```
+
 
 <div class="container">
 
