@@ -99,6 +99,52 @@
         font-size: 0.9em;
         color: #777;
     }
+
+    /* Automatikus, reszponzív szövegtördelés */
+.container {
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Bekezdések sorkizárása */
+.container p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Cím automatikus tördelése és sorkizárása */
+h1 {
+    text-align: justify;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Telefonokra optimalizált megjelenés */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 70px auto 20px;
+        padding: 24px 20px;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .page-header-info {
+        top: 10px;
+        right: 15px;
+        font-size: 0.8em;
+    }
+}
 </style>
     
 </head>
