@@ -101,7 +101,7 @@
     }
 
     /* Automatikus, reszponzív szövegtördelés */
-.container {
+    .container {
     width: 100%;
     max-width: 800px;
     box-sizing: border-box;
@@ -122,28 +122,20 @@ h1 {
     hyphens: auto;
 }
 
-/* Telefonokra optimalizált megjelenés */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        margin: 70px auto 20px;
-        padding: 24px 20px;
-        border-radius: 0;
-    }
+/* Dinamikus, böngészőfüggő szóelválasztás */
+.container p,
+.container h1,
+.container h2,
+.container .mission {
+    text-align: justify;
+    text-justify: auto;
 
-    h1 {
-        font-size: 1.7em;
-    }
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 
-    h2 {
-        font-size: 1.1em;
-    }
-
-    .page-header-info {
-        top: 10px;
-        right: 15px;
-        font-size: 0.8em;
-    }
+    overflow-wrap: break-word;
+    word-break: normal;   
 }
 </style>
     
